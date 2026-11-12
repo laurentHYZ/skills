@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{TITLE}}</title>
+
+  <!-- reveal.js 4.6.1 -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.6.1/dist/reveal.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.6.1/dist/theme/black.css" id="theme">
+
+  <!-- chalkboard + custom controls -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js-plugins@latest/chalkboard/style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js-plugins@latest/customcontrols/style.css">
+
+  <!-- Font Awesome for toolbar icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <style>
+    /* Add slide-specific styles here */
+  </style>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"></script>
+</head>
+<body>
+
+<div class="reveal">
+<div class="slides">
+
+  <!-- TITLE SLIDE -->
+  <section>
+    <h1>{{TITLE}}</h1>
+    <p>{{SUBTITLE}}</p>
+  </section>
+
+  <!-- Add more slides here -->
+
+</div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/reveal.js@4.6.1/dist/reveal.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/reveal.js-plugins@latest/chalkboard/plugin.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/reveal.js-plugins@latest/customcontrols/plugin.js"></script>
+
+<script>
+  Reveal.initialize({
+    controls: true,
+    progress: true,
+    history: true,
+    center: true,
+    slideNumber: 'c',
+    rollingLinks: false,
+    keyboard: true,
+    mouseWheel: false,
+    fragmentInURL: false,
+    hashOneBasedIndex: false,
+    pdfSeparateFragments: true,
+    overview: true,
+    width: 1400,
+    height: 900,
+    margin: 0.05,
+    minScale: 1.00,
+    maxScale: 1.00,
+    transition: 'slide',
+    transitionSpeed: 'default',
+
+    plugins: [
+      RevealChalkboard,
+      RevealCustomControls
+    ],
+
+    chalkboard: {
+      boardmarkerWidth: 3,
+      chalkWidth: 5,
+      chalkEffect: 0.5,
+      src: null,
+      readOnly: false,
+      toggleChalkboardButton: { left: '60px', bottom: '30px' },
+      toggleNotesButton: { left: '90px', bottom: '30px' },
+      colorButtons: true,
+      boardHandle: true,
+      transition: 800,
+      theme: 'chalkboard',
+      background: ['rgba(10,15,25,1)', 'rgba(20,20,20,1)'],
+      grid: { color: 'rgba(100,100,100,0.25)', distance: 80, width: 2 },
+    },
+
+    customcontrols: {
+      controls: [
+        {
+          icon: '<i class="fa fa-chalkboard"></i>',
+          title: 'Toggle blackboard (B)',
+          action: 'RevealChalkboard.toggleChalkboard();'
+        },
+        {
+          icon: '<i class="fa fa-pen"></i>',
+          title: 'Toggle notes canvas (C)',
+          action: 'RevealChalkboard.toggleNotesCanvas();'
+        }
+      ]
+    }
+  });
+</script>
+</body>
+</html>

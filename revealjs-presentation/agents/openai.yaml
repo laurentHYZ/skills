@@ -1,0 +1,3 @@
+display_name: Reveal.js Presentation
+short_description: Build reveal.js HTML slides with chalkboard annotation
+default_prompt: Build a reveal.js HTML presentation with blackboard support. Copy assets/template.html, replace placeholders, add slides, and serve via HTTP.
