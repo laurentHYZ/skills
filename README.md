@@ -40,7 +40,7 @@ cd ~/code/skills
 
 `~/.agents/skills`, `~/.claude/skills`, `~/.codex/skills`,
 `~/.opencode/skill`, `~/.codewhale/skills`, `~/.deepseek/skills`,
-`~/.hermes/skills`.
+`~/.hermes/skills`, `~/.config/emacs/gptel-skills` (gptel agent skills).
 
 ## Daily workflow
 

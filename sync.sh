@@ -34,7 +34,8 @@ default_dirs() {
     "$HOME/.opencode/skill" \
     "$HOME/.codewhale/skills" \
     "$HOME/.deepseek/skills" \
-    "$HOME/.hermes/skills"; do
+    "$HOME/.hermes/skills" \
+    "$HOME/.config/emacs/gptel-skills"; do
     [ -d "$candidate" ] && printf '%s\n' "$candidate"
   done
 }
