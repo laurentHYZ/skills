@@ -1,6 +1,7 @@
 ---
 name: revealjs-presentation
-description: Build reveal.js HTML presentations with chalkboard (blackboard) annotation and custom control toolbar. Use this when the user asks to create a reveal.js presentation, a slide deck, HTML slides, or a teaching/presentation file. Covers the full workflow: generating slide HTML from user content, writing it to a .html file, and serving it via a local HTTP server. Uses reveal.js 4.6.1 with the chalkboard plugin (@latest CDN), custom controls with Font Awesome icons, and minScale/maxScale locked to 1.00 for sharp text rendering.
+description: >-
+  Build reveal.js HTML presentations with chalkboard (blackboard) annotation and custom control toolbar. Use this when the user asks to create a reveal.js presentation, a slide deck, HTML slides, or a teaching/presentation file. Covers the full workflow: generating slide HTML from user content, writing it to a .html file, and serving it via a local HTTP server. Uses reveal.js 4.6.1 with the chalkboard plugin (@latest CDN), custom controls with Font Awesome icons, and minScale/maxScale locked to 1.00 for sharp text rendering.
 ---
 
 # Reveal.js Presentation Builder
